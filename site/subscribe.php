@@ -1,10 +1,6 @@
 <?php
 // --- CONFIG ---
-$LISTMONK_API_URL = "https://listmonk.bellereveretreats.com/api/subscribers";
-$LIST_ID = 3;
-$LISTMONK_USER = "webform";
-$API_TOKEN = "REDACTED_LISTMONK_API_TOKEN";
-$THANK_YOU_URL = "/thank-you.html";
+require __DIR__ . '/listmonk.inc.php';
 
 // --- GET FORM DATA ---
 $name  = trim($_POST['name']) ?? '';
